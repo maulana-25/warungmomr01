@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Warung Mom R Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.hero h1{
+font-size:5rem;
+font-weight:700;
+color:#FFD700;
+text-shadow:0 0 30px rgba(255,215,0,.5);
+}
+
+.hero p{
+font-size:1.2rem;
+margin-top:15px;
+color:#ddd;
+}
+
+.phone{
+margin-top:20px;
+font-size:18px;
+}
+
+.phone a{
+color:#FFD700;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 40px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+font-size:18px;
+background:linear-gradient(45deg,#FFD700,#ff9900);
+color:black;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(255,215,0,.5);
+}
+
+/* PROMO */
+
+.promo{
+margin:50px auto;
+max-width:1000px;
+padding:50px;
+text-align:center;
+border-radius:30px;
+background:linear-gradient(135deg,#FFD700,#ff9900);
+color:black;
+}
+
+.promo h2{
+font-size:2.5rem;
+margin-bottom:15px;
+}
+
+/* SECTION */
+
+.section{
+max-width:1300px;
+margin:auto;
+padding:80px 20px;
+}
+
+.title{
+text-align:center;
+font-size:2.8rem;
+color:#FFD700;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+}
+
+/* CARD */
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:30px;
+padding:30px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(255,215,0,.15);
+}
+
+.card h2{
+margin-bottom:25px;
+color:#FFD700;
+}
+
+.menu-item{
+display:flex;
+justify-content:space-between;
+padding:15px 0;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.menu-item:last-child{
+border:none;
+}
+
+.price{
+color:#FFD700;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+padding:40px;
+text-align:center;
+background:rgba(0,0,0,.5);
+margin-top:80px;
+}
+
+/* WHATSAPP FLOAT */
+
+.wa{
+position:fixed;
+bottom:25px;
+right:25px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+z-index:999;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.title{
+font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="hero-content">
+
+<h1>🍔 Warung Mom R.</h1>
+
+<p>
+Jajanan Kekinian • Premium Street Food • Harga Bersahabat
+</p>
+
+<div class="phone">
+📞 Pemesanan WA :
+<a href="https://wa.me/62895369765806" target="_blank">
+0895-3697-65806
+</a>
+</div>
+
+<a href="https://wa.me/62895369765806?text=Halo%20Warung%20Mom%20R,%20saya%20ingin%20memesan."
+class="btn"
+target="_blank">
+📱 Pesan Sekarang
+</a>
+
+</div>
+</section>
+
+<section class="promo">
+<h2>🔥 Menu Favorit Pelanggan</h2>
+<p>
+Takoyaki • Burger • Kebab • Mie Nyemek • Pisang Krispi
+</p>
+</section>
+
+<section class="section" id="menu">
+
+<h1 class="title">Menu Kami</h1>
+
+<div class="grid">
+
+<div class="card">
+
+<h2>🍔 Menu Makanan</h2>
+
+<div class="menu-item"><span>Takoyaki</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Burger</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Hot Dog</span><span class="price">Rp6.000</span></div>
+<div class="menu-item"><span>Kebab</span><span class="price">Rp8.000</span></div>
+<div class="menu-item"><span>Kentang Goreng</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Dimsum Goreng</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Martabak Telur Mini</span><span class="price">Rp8.000</span></div>
+<div class="menu-item"><span>Otak-Otak Mercon</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Kerupuk Sambal Oncom</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Mie Nyemek</span><span class="price">Rp8.000</span></div>
+<div class="menu-item"><span>Cheese Roll</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Banana Roll</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Pisang Krispi</span><span class="price">Rp5000</span></div>
+<div class="menu-item"><span>Piscok</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Roti Bakar</span><span class="price">Rp5.000</span></div>
+
+</div>
+
+<div class="card">
+
+<h2>🥤 Menu Minuman</h2>
+
+<div class="menu-item"><span>Pop Ice</span><span class="price">Rp7.000</span></div>
+<div class="menu-item"><span>Kopi Susu</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Kopi Hitam</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>Teh Sisri</span><span class="price">Rp2.000</span></div>
+<div class="menu-item"><span>Nutrisari</span><span class="price">Rp4.000</span></div>
+<div class="menu-item"><span>Marimas</span><span class="price">Rp2.000</span></div>
+<div class="menu-item"><span>Good Day</span><span class="price">Rp5.000</span></div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Warung Mom R. Premium Food & Drink
+<br><br>
+📱 WhatsApp Pemesanan:
+<a href="https://wa.me/62895369765806"
+style="color:#FFD700;text-decoration:none;">
+0895-3697-65806
+</a>
+</footer>
+
+<a
+href="https://wa.me/62895369765806?text=Halo%20Warung%20Mom%20R,%20saya%20ingin%20memesan."
+class="wa"
+target="_blank">
+💬
+</a>
+
+</body>
+</html>
