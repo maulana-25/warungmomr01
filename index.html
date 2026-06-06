@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Warung Mom R Premium</title>
+<title>Warung Mom R. Premium</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -22,9 +22,11 @@ body{
 background:
 linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
 url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80');
+
 background-size:cover;
 background-position:center;
 background-attachment:fixed;
+
 color:white;
 }
 
@@ -40,14 +42,13 @@ padding:20px;
 }
 
 .hero-content{
-max-width:800px;
+max-width:900px;
 }
 
 .hero h1{
 font-size:5rem;
-font-weight:700;
 color:#FFD700;
-text-shadow:0 0 30px rgba(255,215,0,.5);
+text-shadow:0 0 25px rgba(255,215,0,.5);
 }
 
 .hero p{
@@ -59,6 +60,7 @@ color:#ddd;
 .phone{
 margin-top:20px;
 font-size:18px;
+line-height:1.8;
 }
 
 .phone a{
@@ -69,37 +71,27 @@ font-weight:bold;
 
 .btn{
 display:inline-block;
-margin-top:25px;
+margin-top:15px;
 padding:15px 40px;
+
 border-radius:50px;
-text-decoration:none;
-font-weight:600;
-font-size:18px;
-background:linear-gradient(45deg,#FFD700,#ff9900);
+
+background:
+linear-gradient(45deg,#FFD700,#ff9900);
+
 color:black;
+
+font-weight:600;
+text-decoration:none;
+
 transition:.3s;
 }
 
 .btn:hover{
 transform:translateY(-5px);
-box-shadow:0 10px 25px rgba(255,215,0,.5);
-}
 
-/* PROMO */
-
-.promo{
-margin:50px auto;
-max-width:1000px;
-padding:50px;
-text-align:center;
-border-radius:30px;
-background:linear-gradient(135deg,#FFD700,#ff9900);
-color:black;
-}
-
-.promo h2{
-font-size:2.5rem;
-margin-bottom:15px;
+box-shadow:
+0 10px 25px rgba(255,215,0,.4);
 }
 
 /* SECTION */
@@ -112,43 +104,101 @@ padding:80px 20px;
 
 .title{
 text-align:center;
+
 font-size:2.8rem;
-color:#FFD700;
+
 margin-bottom:50px;
+
+color:#FFD700;
 }
+
+/* PROMO */
+
+.promo{
+max-width:1000px;
+
+margin:40px auto;
+
+padding:40px;
+
+text-align:center;
+
+border-radius:25px;
+
+background:
+linear-gradient(
+135deg,
+#FFD700,
+#ff9900
+);
+
+color:black;
+}
+
+/* GRID */
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(350px,1fr)
+);
+
 gap:30px;
 }
 
-/* CARD */
-
 .card{
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,.1);
+
+background:
+rgba(255,255,255,.08);
+
+backdrop-filter:
+blur(20px);
+
+border:
+1px solid rgba(255,215,0,.2);
+
 border-radius:30px;
+
 padding:30px;
+
+box-shadow:
+0 0 20px rgba(255,215,0,.08);
+
 transition:.4s;
 }
 
 .card:hover{
-transform:translateY(-10px);
-box-shadow:0 20px 40px rgba(255,215,0,.15);
+
+transform:
+translateY(-10px);
+
+box-shadow:
+0 20px 40px rgba(255,215,0,.25);
+
 }
 
 .card h2{
-margin-bottom:25px;
+
+margin-bottom:20px;
+
 color:#FFD700;
+
 }
 
 .menu-item{
+
 display:flex;
+
 justify-content:space-between;
+
 padding:15px 0;
-border-bottom:1px solid rgba(255,255,255,.1);
+
+border-bottom:
+1px solid rgba(255,255,255,.1);
+
 }
 
 .menu-item:last-child{
@@ -156,119 +206,285 @@ border:none;
 }
 
 .price{
+
 color:#FFD700;
+
 font-weight:bold;
+
+}
+
+/* QRIS */
+
+.qris{
+
+text-align:center;
+
+padding:40px 25px;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.qris img{
+
+width:280px;
+
+max-width:90%;
+
+display:block;
+
+margin:0 auto 35px auto;
+
+background:#fff;
+
+padding:14px;
+
+border-radius:28px;
+
+border:6px solid #FFD700;
+
+object-fit:contain;
+
+box-shadow:
+0 0 35px rgba(255,215,0,.35);
+
+transition:.4s;
+
+}
+
+.qris img:hover{
+
+transform:scale(1.03);
+
+}
+
+.qris h2{
+
+margin:0 0 18px;
+
+color:#FFD700;
+
+font-size:42px;
+
+}
+
+.qris p{
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#eee;
+
 }
 
 /* FOOTER */
 
 footer{
-padding:40px;
-text-align:center;
-background:rgba(0,0,0,.5);
+
 margin-top:80px;
+
+padding:50px;
+
+text-align:center;
+
+background:
+rgba(0,0,0,.5);
+
 }
 
-/* WHATSAPP FLOAT */
+footer h3{
+
+color:#FFD700;
+
+margin-bottom:10px;
+
+}
+
+/* WA */
 
 .wa{
+
 position:fixed;
+
 bottom:25px;
+
 right:25px;
+
 width:70px;
+
 height:70px;
+
 background:#25D366;
+
 border-radius:50%;
+
 display:flex;
+
 align-items:center;
+
 justify-content:center;
+
 font-size:35px;
-text-decoration:none;
+
 color:white;
-box-shadow:0 0 20px rgba(0,0,0,.4);
-z-index:999;
+
+text-decoration:none;
+
 animation:pulse 2s infinite;
+
 }
 
 @keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.1);}
-100%{transform:scale(1);}
+
+0%{
+transform:scale(1);
 }
+
+50%{
+transform:scale(1.1);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
 
 .hero h1{
+
 font-size:3rem;
+
 }
 
 .title{
+
 font-size:2rem;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+.qris img{
+
+width:240px;
+
+}
+
+.qris h2{
+
+font-size:32px;
+
+}
+
+.qris p{
+
+font-size:18px;
+
 }
 
 }
 
 </style>
 </head>
+
 <body>
 
 <section class="hero">
+
 <div class="hero-content">
 
 <h1>🍔 Warung Mom R.</h1>
 
 <p>
-Jajanan Kekinian • Premium Street Food • Harga Bersahabat
+Jajanan Kekinian • Enak • Murah • Berkualitas
 </p>
 
 <div class="phone">
-📞 Pemesanan WA :
-<a href="https://wa.me/62895369765806" target="_blank">
+
+📍 Desa Palawad, Kec. Karawang Timur, Jawa Barat
+
+<br>
+
+📞 WhatsApp :
+
+<a href="https://wa.me/62895369765806">
+
 0895-3697-65806
+
 </a>
+
 </div>
 
-<a href="https://wa.me/62895369765806?text=Halo%20Warung%20Mom%20R,%20saya%20ingin%20memesan."
-class="btn"
-target="_blank">
+<a
+href="https://wa.me/62895369765806?text=Halo%20Warung%20Mom%20R.%20Saya%20ingin%20memesan%20menu."
+class="btn">
+
 📱 Pesan Sekarang
+
+</a>
+
+<br>
+
+<a href="#menu" class="btn">
+
+📋 Lihat Menu
+
 </a>
 
 </div>
+
 </section>
 
 <section class="promo">
-<h2>🔥 Menu Favorit Pelanggan</h2>
+
+<h2>
+🔥 Menu Favorit Pelanggan
+</h2>
+
 <p>
-Takoyaki • Burger • Kebab • Mie Nyemek • Pisang Krispi
+⭐ Takoyaki • 🔥 Burger • 🥇 Kebab • 🍜 Mie Nyemek • 🍌 Pisang Krispi
 </p>
+
 </section>
 
 <section class="section" id="menu">
 
-<h1 class="title">Menu Kami</h1>
+<h1 class="title">
+🍔 Daftar Menu
+</h1>
 
 <div class="grid">
 
 <div class="card">
 
-<h2>🍔 Menu Makanan</h2>
+<h2>Menu Makanan</h2>
 
-<div class="menu-item"><span>Takoyaki</span><span class="price">Rp5.000</span></div>
-<div class="menu-item"><span>Burger</span><span class="price">Rp5.000</span></div>
-<div class="menu-item"><span>Hot Dog</span><span class="price">Rp6.000</span></div>
-<div class="menu-item"><span>Kebab</span><span class="price">Rp8.000</span></div>
-<div class="menu-item"><span>Kentang Goreng</span><span class="price">Rp5.000</span></div>
-<div class="menu-item"><span>Dimsum Goreng</span><span class="price">Rp5.000</span></div>
-<div class="menu-item"><span>Martabak Telur Mini</span><span class="price">Rp8.000</span></div>
-<div class="menu-item"><span>Otak-Otak Mercon</span><span class="price">Rp5.000</span></div>
-<div class="menu-item"><span>Kerupuk Sambal Oncom</span><span class="price">Rp5.000</span></div>
-<div class="menu-item"><span>Mie Nyemek</span><span class="price">Rp8.000</span></div>
-<div class="menu-item"><span>Cheese Roll</span><span class="price">Rp5.000</span></div>
-<div class="menu-item"><span>Banana Roll</span><span class="price">Rp5.000</span></div>
-<div class="menu-item"><span>Pisang Krispi</span><span class="price">Rp5000</span></div>
-<div class="menu-item"><span>Piscok</span><span class="price">Rp5.000</span></div>
-<div class="menu-item"><span>Roti Bakar</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>⭐ Takoyaki</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>🔥 Burger</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>🌭 Hot Dog</span><span class="price">Rp6.000</span></div>
+<div class="menu-item"><span>🥇 Kebab</span><span class="price">Rp8.000</span></div>
+<div class="menu-item"><span>🍟 Kentang Goreng</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>🥟 Dimsum Goreng</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>🥚 Martabak Telur Mini</span><span class="price">Rp8.000</span></div>
+<div class="menu-item"><span>🌶️ Otak-Otak Mercon</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>🔥 Kerupuk Sambal Oncom</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>🍜 Mie Nyemek</span><span class="price">Rp8.000</span></div>
+<div class="menu-item"><span>🧀 Cheese Roll</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>🍌 Banana Roll</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>🍌 Pisang Krispi</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>🍫 Piscok</span><span class="price">Rp5.000</span></div>
+<div class="menu-item"><span>🍞 Roti Bakar</span><span class="price">Rp5.000</span></div>
 
 </div>
 
@@ -290,21 +506,68 @@ Takoyaki • Burger • Kebab • Mie Nyemek • Pisang Krispi
 
 </section>
 
+<section class="section">
+
+<h1 class="title">
+💳 Pembayaran QRIS
+</h1>
+
+<div class="card qris">
+
+<img src="qris.jpg"
+     alt="QRIS"
+     style="width:300px;max-width:100%;display:block;">
+
+<h2>
+Scan QRIS
+</h2>
+
+<p>
+DANA • OVO • GoPay • ShopeePay • Mobile Banking
+</p>
+
+</div>
+
+</section>
+
 <footer>
-© 2026 Warung Mom R. Premium Food & Drink
+
+<h3>
+🍔 Warung Mom R.
+</h3>
+
+<p>
+Jajanan Kekinian • Enak • Murah • Berkualitas
+</p>
+
+<br>
+
+📍 Desa Palawad, Kec. Karawang Timur, Jawa Barat
+
 <br><br>
-📱 WhatsApp Pemesanan:
-<a href="https://wa.me/62895369765806"
+
+📱 WhatsApp :
+
+<a
+href="https://wa.me/62895369765806"
 style="color:#FFD700;text-decoration:none;">
+
 0895-3697-65806
+
 </a>
+
+<br><br>
+
+© 2026 Warung Mom R.
+
 </footer>
 
 <a
-href="https://wa.me/62895369765806?text=Halo%20Warung%20Mom%20R,%20saya%20ingin%20memesan."
-class="wa"
-target="_blank">
+href="https://wa.me/62895369765806?text=Halo%20Warung%20Mom%20R.%20Saya%20ingin%20memesan."
+class="wa">
+
 💬
+
 </a>
 
 </body>
