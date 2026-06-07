@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Warung Mom R. Premium</title>
+<title>Warung Mom R.</title>
+
+<meta
+name="description"
+content="Warung Mom R. - Jajanan kekinian murah dan enak di Karawang Timur">
+
+<link rel="icon" href="./logo.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -14,177 +21,296 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:Poppins,sans-serif;
+}
+
+html{
 scroll-behavior:smooth;
 }
 
 body{
-background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80');
+background:#111;
+color:#fff;
+}
 
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+
+background:
+rgba(0,0,0,.75);
+
+backdrop-filter:
+blur(10px);
+}
+
+nav{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:15px 20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.logo-area{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+}
+
+.logo-area img{
+
+width:52px;
+
+height:52px;
+
+object-fit:contain;
+
+border-radius:50%;
+
+}
+
+.logo-text{
+
+font-size:24px;
+
+font-weight:700;
+
+color:#FFD700;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:25px;
+
+list-style:none;
+
+align-items:center;
+
+}
+
+nav a{
+
+text-decoration:none;
 
 color:white;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#FFD700;
+
 }
 
 /* HERO */
 
 .hero{
-height:100vh;
+
+min-height:100vh;
+
 display:flex;
-align-items:center;
+
 justify-content:center;
+
+align-items:center;
+
 text-align:center;
-padding:20px;
+
+padding:120px 20px 40px;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.7),
+rgba(0,0,0,.7)
+),
+
+url(
+"https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80"
+);
+
+background-size:cover;
+
+background-position:center;
+
 }
 
-.hero-content{
-max-width:900px;
+.hero-logo{
+
+width:350px;
+
+max-width:100%;
+
+margin-bottom:25px;
+
+filter:
+
+drop-shadow(
+0 0 25px
+rgba(255,215,0,.4)
+);
+
 }
 
 .hero h1{
-font-size:5rem;
+
+font-size:4rem;
+
 color:#FFD700;
-text-shadow:0 0 25px rgba(255,215,0,.5);
+
 }
 
 .hero p{
-font-size:1.2rem;
-margin-top:15px;
-color:#ddd;
+
+margin:15px 0;
+
 }
 
-.phone{
-margin-top:20px;
-font-size:18px;
-line-height:1.8;
-}
-
-.phone a{
-color:#FFD700;
-text-decoration:none;
-font-weight:bold;
-}
+/* BUTTON */
 
 .btn{
+
 display:inline-block;
-margin-top:15px;
-padding:15px 40px;
+
+padding:14px 30px;
 
 border-radius:50px;
 
 background:
-linear-gradient(45deg,#FFD700,#ff9900);
+
+linear-gradient(
+45deg,
+#FFD700,
+#FFA500
+);
 
 color:black;
 
-font-weight:600;
+font-weight:700;
+
 text-decoration:none;
 
-transition:.3s;
 }
 
 .btn:hover{
-transform:translateY(-5px);
 
-box-shadow:
-0 10px 25px rgba(255,215,0,.4);
+transform:
+translateY(-2px);
+
+}
+
+.badges{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+flex-wrap:wrap;
+
+margin-top:20px;
+
+}
+
+.badges span{
+
+padding:8px 15px;
+
+border:
+
+1px solid
+#FFD700;
+
+border-radius:40px;
+
 }
 
 /* SECTION */
 
 .section{
-max-width:1300px;
+
+max-width:1200px;
+
 margin:auto;
+
 padding:80px 20px;
+
 }
 
 .title{
+
 text-align:center;
-
-font-size:2.8rem;
-
-margin-bottom:50px;
 
 color:#FFD700;
+
+margin-bottom:40px;
+
 }
-
-/* PROMO */
-
-.promo{
-max-width:1000px;
-
-margin:40px auto;
-
-padding:40px;
-
-text-align:center;
-
-border-radius:25px;
-
-background:
-linear-gradient(
-135deg,
-#FFD700,
-#ff9900
-);
-
-color:black;
-}
-
-/* GRID */
 
 .grid{
+
 display:grid;
 
 grid-template-columns:
+
 repeat(
 auto-fit,
-minmax(350px,1fr)
+minmax(320px,1fr)
 );
 
-gap:30px;
+gap:25px;
+
 }
 
 .card{
 
 background:
-rgba(255,255,255,.08);
 
-backdrop-filter:
-blur(20px);
+rgba(255,255,255,.05);
 
 border:
-1px solid rgba(255,215,0,.2);
 
-border-radius:30px;
+1px solid
+rgba(255,215,0,.2);
 
-padding:30px;
+padding:25px;
 
-box-shadow:
-0 0 20px rgba(255,215,0,.08);
+border-radius:20px;
 
-transition:.4s;
+transition:.3s;
+
 }
 
 .card:hover{
 
 transform:
-translateY(-10px);
-
-box-shadow:
-0 20px 40px rgba(255,215,0,.25);
-
-}
-
-.card h2{
-
-margin-bottom:20px;
-
-color:#FFD700;
+translateY(-5px);
 
 }
 
@@ -194,89 +320,78 @@ display:flex;
 
 justify-content:space-between;
 
-padding:15px 0;
+padding:12px 0;
 
 border-bottom:
-1px solid rgba(255,255,255,.1);
 
-}
+1px solid
+rgba(255,255,255,.08);
 
-.menu-item:last-child{
-border:none;
 }
 
 .price{
 
 color:#FFD700;
 
-font-weight:bold;
+font-weight:700;
 
 }
 
-/* QRIS */
+.testimonial{
+
+text-align:center;
+
+line-height:1.8;
+
+}
 
 .qris{
 
 text-align:center;
 
-padding:40px 25px;
-
-max-width:700px;
-
-margin:auto;
-
 }
 
 .qris img{
 
-width:280px;
+width:300px;
 
-max-width:90%;
+max-width:100%;
 
-display:block;
+background:white;
 
-margin:0 auto 35px auto;
+padding:10px;
 
-background:#fff;
-
-padding:14px;
-
-border-radius:28px;
-
-border:6px solid #FFD700;
-
-object-fit:contain;
-
-box-shadow:
-0 0 35px rgba(255,215,0,.35);
-
-transition:.4s;
+border-radius:20px;
 
 }
 
-.qris img:hover{
+/* MAP */
 
-transform:scale(1.03);
+.map-container{
 
-}
+display:flex;
 
-.qris h2{
-
-margin:0 0 18px;
-
-color:#FFD700;
-
-font-size:42px;
+justify-content:center;
 
 }
 
-.qris p{
+.map-container iframe{
 
-font-size:20px;
+width:90%;
 
-line-height:1.8;
+height:350px;
 
-color:#eee;
+border-radius:20px;
+
+border:none;
+
+}
+
+.map-text{
+
+text-align:center;
+
+margin-top:20px;
 
 }
 
@@ -284,72 +399,47 @@ color:#eee;
 
 footer{
 
-margin-top:80px;
-
-padding:50px;
-
 text-align:center;
 
-background:
-rgba(0,0,0,.5);
+padding:40px;
+
+background:black;
+
+margin-top:60px;
 
 }
-
-footer h3{
-
-color:#FFD700;
-
-margin-bottom:10px;
-
-}
-
-/* WA */
 
 .wa{
 
 position:fixed;
 
-bottom:25px;
+right:20px;
 
-right:25px;
+bottom:20px;
 
-width:70px;
+width:65px;
 
-height:70px;
-
-background:#25D366;
+height:65px;
 
 border-radius:50%;
 
-display:flex;
+background:#25D366;
 
-align-items:center;
+display:flex;
 
 justify-content:center;
 
-font-size:35px;
+align-items:center;
 
-color:white;
+font-size:32px;
 
 text-decoration:none;
 
-animation:pulse 2s infinite;
+color:white;
 
-}
-
-@keyframes pulse{
-
-0%{
-transform:scale(1);
-}
-
-50%{
-transform:scale(1.1);
-}
-
-100%{
-transform:scale(1);
-}
+box-shadow:
+0 8px 25px
+rgba(0,0,0,.5);
 
 }
 
@@ -358,103 +448,152 @@ transform:scale(1);
 @media(max-width:768px){
 
 .hero h1{
-
-font-size:3rem;
-
+font-size:2.5rem;
 }
 
-.title{
-
-font-size:2rem;
-
+.logo-area img{
+width:40px;
+height:40px;
 }
 
-.grid{
-
-grid-template-columns:1fr;
-
+.logo-text{
+font-size:16px;
 }
 
-.qris img{
-
-width:240px;
-
+nav{
+flex-direction:column;
+gap:15px;
 }
 
-.qris h2{
-
-font-size:32px;
-
-}
-
-.qris p{
-
-font-size:18px;
-
+nav ul{
+gap:15px;
+font-size:14px;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
-<section class="hero">
+<header>
 
-<div class="hero-content">
+<nav>
 
-<h1>🍔 Warung Mom R.</h1>
+<div class="logo-area">
 
-<p>
-Jajanan Kekinian • Enak • Murah • Berkualitas
-</p>
+<img
+src="./logo.png"
+alt="Logo"
+loading="lazy">
 
-<div class="phone">
+<div class="logo-text">
 
-📍 Desa Palawad, Kec. Karawang Timur, Jawa Barat
-
-<br>
-
-📞 WhatsApp :
-
-<a href="https://wa.me/62895369765806">
-
-0895-3697-65806
-
-</a>
+Selamat Datang Di Warung Mom R.
 
 </div>
+
+</div>
+
+<ul>
+
+<li>
+<a href="#">
+Beranda
+</a>
+</li>
+
+<li>
+<a href="#menu">
+Menu
+</a>
+</li>
+
+<li>
+<a href="#DANA">
+Dana
+</a>
+</li>
+
+<li>
+<a href="#lokasi">
+Lokasi
+</a>
+</li>
+
+<li>
 
 <a
-href="https://wa.me/62895369765806?text=Halo%20Warung%20Mom%20R.%20Saya%20ingin%20memesan%20menu."
-class="btn">
+href="https://wa.me/62895369765806"
+target="_blank">
 
-📱 Pesan Sekarang
+Pesan
 
 </a>
 
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>
+
+Warung Mom R.
+
+</h1>
+
 <br>
 
-<a href="#menu" class="btn">
+<img
+src="./logo.png"
+class="hero-logo"
+alt="Logo"
+loading="lazy">
 
-📋 Lihat Menu
+<p>
+
+Jajanan Kekinian • Enak • Murah • Berkualitas
+
+</p>
+
+<div class="badges">
+
+<span>✅  Delivery Order</span>
+
+<span>✅ Harga Terjangkau</span>
+
+<span>✅ Halal</span>
+
+<span>✅ DANA</span>
+
+<span>✅ Pesan WA</span>
+
+
+</div>
+
+<br>
+
+<a
+class="btn"
+
+href="https://wa.me/62895369765806"
+
+target="_blank">
+
+Pesan Sekarang
 
 </a>
 
 </div>
-
-</section>
-
-<section class="promo">
-
-<h2>
-🔥 Menu Favorit Pelanggan
-</h2>
-
-<p>
-⭐ Takoyaki • 🔥 Burger • 🥇 Kebab • 🍜 Mie Nyemek • 🍌 Pisang Krispi
-</p>
 
 </section>
 
@@ -506,69 +645,129 @@ class="btn">
 
 </section>
 
+
+
 <section class="section">
 
+<h2 class="title">
+
+⭐ Testimoni
+
+</h2>
+
+<div class="grid">
+
+<div class="card testimonial">
+
+⭐⭐⭐⭐⭐
+
+<p>
+Takoyaki enak dan murah
+</p>
+
+</div>
+
+<div class="card testimonial">
+
+⭐⭐⭐⭐⭐
+
+<p>
+Burger mantap
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section"id="DANA">
+
 <h1 class="title">
-💳 Pembayaran Dana
+
+💳 Pembayaran DANA
+
 </h1>
 
 <div class="card qris">
 
-<img src="qris.jpg"
-     alt="QRIS"
-     style="width:300px;max-width:100%;display:block;">
+<img
+src="./qris.jpg"
+alt="QRIS"
+loading="lazy">
 
-<h2>
-Scan Dana
-</h2>
+<h2>Scan Dana</h2>
 
 <p>
-Silahkan Barcode Untuk Pembayaran Lewat DANA 
+Silakan scan untuk pembayaran
 </p>
 
 </div>
 
 </section>
 
-<footer>
+<section
+class="section"
+id="lokasi">
 
-<h3>
-🍔 Warung Mom R.
-</h3>
+<h2 class="title">
 
-<p>
-Jajanan Kekinian • Enak • Murah • Berkualitas
+📍 Lokasi Kami
+
+</h2>
+
+<div class="map-container">
+
+<iframe
+src="https://maps.google.com/maps?q=-6.287007,107.347756&z=17&output=embed">
+</iframe>
+
+</div>
+
+<p class="map-text">
+
+Desa Palawad,
+Karawang Timur
+
 </p>
 
-<br>
+</section>
 
-📍 Desa Palawad, Kec. Karawang Timur, Jawa Barat
-
-<br><br>
-
-📱 WhatsApp :
-
-<a
-href="https://wa.me/62895369765806"
-style="color:#FFD700;text-decoration:none;">
-
-0895-3697-65806
-
-</a>
-
-<br><br>
-
-© 2026 Warung Mom R.
-
+<footer>
+<h3 style="color:#FFD700">Warung Mom R.</h3>
+<p>Desa Palawad, Karawang Timur</p>
+<p>WhatsApp: 0895-3697-65806</p>
+<p id="year"></p>
 </footer>
 
 <a
-href="https://wa.me/62895369765806?text=Halo%20Warung%20Mom%20R.%20Saya%20ingin%20memesan."
-class="wa">
+class="wa"
+
+href="https://wa.me/62895369765806"
+
+target="_blank">
 
 💬
 
 </a>
 
+<script>
+
+document
+.getElementById("year")
+.innerHTML=
+
+"© "+
+
+new Date()
+.getFullYear()
+
++
+
+" Warung Mom R.";
+
+</script>
+
 </body>
+
 </html>
